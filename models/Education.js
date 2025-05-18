@@ -1,13 +1,10 @@
 const mongoose = require('mongoose');
 
 const educationSchema = new mongoose.Schema({
+  title: String,
   institution: String,
-  degree: String,
-  fieldOfStudy: String,
-  startDate: Date,
-  endDate: Date,
-  grade: String,
-  description: String
+  duration: String,
+  image: String
 });
 
 module.exports = mongoose.model('Education', educationSchema);
